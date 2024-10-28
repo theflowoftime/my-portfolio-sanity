@@ -1,5 +1,5 @@
-import {contactType} from './contactType'
-import {projectType} from './projectType'
-import {translationType} from './translationsType'
+import {contact} from './contact'
+import {navBar} from './navBar'
+import {project} from './project'
 
-export const schemaTypes = [projectType, contactType, translationType]
+export const schemaTypes = [project, contact, navBar]

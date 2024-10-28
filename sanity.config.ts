@@ -18,11 +18,11 @@ export default defineConfig({
     documentInternationalization({
       // Required configuration
       supportedLanguages: [
-        {id: 'fr', title: 'French'},
-        {id: 'en', title: 'English'},
-        {id: 'ar', title: 'Arabic'},
+        {id: 'FR', title: 'French'},
+        {id: 'EN', title: 'English'},
+        {id: 'AR', title: 'Arabic'},
       ],
-      schemaTypes: ['lesson'],
+      schemaTypes: ['navBar'],
     }),
   ],
 
