@@ -1,4 +1,4 @@
-import {defineType} from 'sanity'
+import {defineField, defineType} from 'sanity'
 
 export const contact = defineType({
   name: 'contact',
@@ -35,5 +35,11 @@ export const contact = defineType({
       validation: (Rule) =>
         Rule.required().min(10).max(1000).error('Message must be between 10 and 1000 characters.'),
     },
+    defineField({
+      name: 'language',
+      type: 'string',
+      readOnly: true,
+      hidden: true,
+    }),
   ],
 })

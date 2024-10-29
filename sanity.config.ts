@@ -22,7 +22,7 @@ export default defineConfig({
         {id: 'EN', title: 'English'},
         {id: 'AR', title: 'Arabic'},
       ],
-      schemaTypes: ['navBar'],
+      schemaTypes: ['navBar', 'project', 'contact'],
     }),
   ],
 

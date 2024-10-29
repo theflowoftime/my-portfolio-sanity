@@ -25,8 +25,24 @@ export const navBar = defineType({
         {
           type: 'object',
           fields: [
-            {name: 'title', title: 'Link Title', type: 'string'},
-            {name: 'path', title: 'Path', type: 'string'},
+            defineField({
+              name: 'title',
+              title: 'Navigation Title',
+              type: 'string',
+              description: 'The text shown for this link in the navigation.',
+            }),
+            defineField({
+              name: 'slug',
+              title: 'Slug',
+              type: 'string',
+              description: 'Unique identifier for the section (e.g., "home", "works")',
+            }),
+            defineField({
+              name: 'path',
+              title: 'Path',
+              type: 'string',
+              description: 'URL or in-page hash for the link target',
+            }),
           ],
           preview: {
             select: {
